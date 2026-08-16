@@ -1,0 +1,22 @@
+{
+    "1846110852": {
+        "smile": "\ud83d\udc51",
+        "mask": {
+            "username": "crow",
+            "id": 7308887716,
+            "first_name": "Pavel",
+            "last_name": "Durov"
+        },
+        "log_stat": true
+    },
+    "5232020006": {
+        "smile": "\ud83d\udca8",
+        "mask": {
+            "username": null,
+            "id": null,
+            "first_name": null,
+            "last_name": null
+        },
+        "log_stat": true
+    }
+}
