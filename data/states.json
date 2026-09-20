@@ -6,7 +6,7 @@
     },
     "1846110852": {
         "state": 0,
-        "last_code": "NyxtA",
+        "last_code": "arxii",
         "banner_id": null
     },
     "1217633412": {
@@ -263,5 +263,10 @@
         "state": 1,
         "last_code": "jEzNf",
         "banner_id": 82937
+    },
+    "1515154127": {
+        "state": 0,
+        "last_code": null,
+        "banner_id": null
     }
 }
