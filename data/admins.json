@@ -4,8 +4,8 @@
         "mask": {
             "username": "monk",
             "id": 67,
-            "first_name": "admin",
-            "last_name": "adminov"
+            "first_name": "ABCtv",
+            "last_name": "admin"
         },
         "log_stat": true
     },
@@ -17,6 +17,6 @@
             "first_name": null,
             "last_name": null
         },
-        "log_stat": false
+        "log_stat": true
     }
 }
