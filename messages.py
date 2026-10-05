@@ -103,7 +103,7 @@ tg://user?id={}
 вы до этого как то <b>контактировали</b> с этим человеком
 (Подписчик, общий чат, личный чат и тд)</i>
 
-<blockquote>ANON V4.1
+<blockquote>ANON V4.2
 made by ABCtv
 wardentrey3@gmail.com
 </blockquote>

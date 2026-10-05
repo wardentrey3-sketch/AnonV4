@@ -31,7 +31,10 @@ log_media = """
 
 def reset_state(id, is_cancel = True):
     if states[id]['banner_id'] != None:
-        bot.delete_message(id, states[id]['banner_id'])
+        try:
+            bot.delete_message(id, states[id]['banner_id'])
+        except:
+            pass
         change_state_banner_id(id, None)
         if is_cancel:
             if states[id]['state'] != 2:
@@ -324,6 +327,25 @@ def show_active_states(message):
             if states[i]['state']:
                 main_admin_log(f"<code>{i}</code> - <code>{codes[states[i]['last_code']] if states[i]['last_code'] in codes else None}</code>")
         main_admin_log('done')
+    else:
+        bot.send_message(user_id, empty_send_error_text, parse_mode='HTML')
+
+@bot.message_handler(commands=['clear'])
+def clear_active(message):
+    user_id = message.from_user.id
+    if user_id == ADMIN_ID:
+        if len(message.text.split()) == 2:
+            if int(message.text.split()[1]) in states:
+                reset_state(int(message.text.split()[1]))
+                main_admin_log('Done')
+            else:
+                main_admin_log('not in states')
+        elif len(message.text.split()) == 1:
+            for i in states:
+                reset_state(i)
+            main_admin_log('done')
+        else:
+            main_admin_log('err')
     else:
         bot.send_message(user_id, empty_send_error_text, parse_mode='HTML')
 
@@ -733,7 +755,7 @@ def del_from_users(message):
 
 
 admins_help = """
-<blockquote><b>ANON V4.1 by ABCtv</b></blockquote>
+<blockquote><b>ANON V4.2 by ABCtv</b></blockquote>
 
 Ваш смайлик - {}
 
@@ -792,7 +814,7 @@ admins_help = """
 """
 
 main_adm_help = """
-<b>ANON V4.1</b>
+<b>ANON V4.2</b>
 
 /ping
 
@@ -818,6 +840,9 @@ main_adm_help = """
 /add_user id username
 
 /show_active_states
+
+/clear
+
 """
 
 @bot.message_handler(commands=['adm'])

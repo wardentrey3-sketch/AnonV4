@@ -21,5 +21,5 @@ if __name__ == "__main__":
     except Exception as e:
         print('err start sms', e)
 
-    print('ANON_V4.1: Bot start', datetime.now().time()) 
+    print('ANON_V4.2: Bot start', datetime.now().time()) 
     bot.infinity_polling()
