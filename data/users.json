@@ -1566,7 +1566,7 @@
         "reg_date": "21.02.2026 22:00"
     },
     "7080159984": {
-        "username": "sofqzz",
+        "username": "sfqzz",
         "first_name": "oops",
         "last_name": "None  (For now Unknown)",
         "reg_date": "21.02.2026 22:00"
@@ -2044,5 +2044,17 @@
         "first_name": "LUNA",
         "last_name": null,
         "reg_date": "15.11.2026 23:33"
+    },
+    "6421157907": {
+        "username": "ghijyk",
+        "first_name": "\u043c\u0430\u0448\u043a\u043e\u043e\ud83e\udeab",
+        "last_name": null,
+        "reg_date": "24.11.2026 23:29"
+    },
+    "6909114726": {
+        "username": "tatkamilyas",
+        "first_name": "\u1d0b\u1d00\u028d\u0438\u1d27\u1d27.\ud83e\udd0d\ud80c\udc85",
+        "last_name": null,
+        "reg_date": "26.11.2026 23:12"
     }
 }
